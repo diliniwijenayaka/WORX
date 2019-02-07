@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='vyigrat.conf'
-CONFIGFOLDER='/root/.vyigrat'
-COIN_DAEMON='vyigratd'
-COIN_CLI='vyigrat-cli'
+CONFIG_FILE='gossipcoin.conf'
+CONFIGFOLDER='/root/.gossipcoin'
+COIN_DAEMON='gossipcoind'
+COIN_CLI='gossipcoin-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='http://vyigrat.com/vyigrat_ubuntu.zip'
+COIN_TGZ='https://github.com/g0ssipcoin/GossipCoinCore/releases/download/v1.1.0.0/Linux-gossipcoin.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='vyigrat'
-COIN_PORT=12698
-RPC_PORT=12699
+COIN_NAME='gossipcoin'
+COIN_PORT=22123
+RPC_PORT=22122
 CHAIN_LINK='http://vyigrat.com/vyi_temp.zip'
 CHAIN='vyi_temp.zip'
 
@@ -162,7 +162,66 @@ masternode=1
 masternodeaddr=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
-#ADDNODES
+addnode=104.207.145.174:22123
+addnode=104.248.156.173:45778
+addnode=107.191.47.244:22123
+addnode=115.40.79.36:4223
+addnode=117.50.57.161:61278
+addnode=117.50.57.161:64553
+addnode=14.44.72.89:10068
+addnode=142.93.231.191:32780
+addnode=144.172.68.186:22123
+addnode=145.131.6.101:38730
+addnode=149.28.47.148:22123
+addnode=167.99.51.120:22123
+addnode=173.208.132.186:36860
+addnode=173.249.50.136:49452
+addnode=178.128.110.227:38998
+addnode=178.128.127.52:43370
+addnode=186.28.88.88:53419
+addnode=188.165.220.114:33178
+addnode=188.165.220.114:59996
+addnode=192.3.12.169:22123
+addnode=193.187.173.21:22123
+addnode=194.182.76.137:22123
+addnode=195.181.217.142:22123
+addnode=198.46.188.114:34874
+addnode=199.247.7.183:42066
+addnode=202.182.126.9:56468
+addnode=206.189.154.179:22123
+addnode=207.180.218.234:22123
+addnode=207.180.242.136:49430
+addnode=209.222.30.6:53732
+addnode=209.250.242.8:44644
+addnode=209.97.174.14:22123
+addnode=217.61.0.69:58124
+addnode=217.69.5.117:22123
+addnode=23.94.189.82:22123
+addnode=35.231.236.74:43114
+addnode=35.231.236.74:44060
+addnode=35.231.236.74:44322
+addnode=35.231.236.74:56692
+addnode=45.32.232.169:22123
+addnode=45.63.22.54:57828
+addnode=45.77.105.27:22123
+addnode=58.221.87.50:62684
+addnode=66.42.35.248:22123
+addnode=8.6.193.156:22123
+addnode=80.211.156.176:44980
+addnode=80.211.164.106:58412
+addnode=80.211.69.190:22123
+addnode=80.211.93.18:40986
+addnode=80.240.25.202:58362
+addnode=80.245.115.36:36796
+addnode=80.245.115.36:58986
+addnode=80.245.115.36:63983
+addnode=80.88.90.82:22123
+addnode=81.2.246.6:22123
+addnode=85.255.10.163:34922
+addnode=86.105.55.193:22123
+addnode=94.177.163.220:22123
+addnode=94.177.234.231:57924
+addnode=95.179.140.3:22123
 
 
 EOF
