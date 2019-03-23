@@ -10,7 +10,7 @@ COIN_TGZ='http://vyigrat.com/vyigrat_ubuntu.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='gossip'
 COIN_PORT=23677
-RPC_PORT=23678
+RPC_PORT=23676
 CHAIN_LINK='http://vyigrat.com/vyi_temp.zip'
 CHAIN='vyi_temp.zip'
 
